@@ -1,0 +1,124 @@
+.settings {
+	min-height: calc(100vh - 60px);
+	width: 100%;
+	padding: 20px 20px 60px 20px;
+	color: #fff;
+}
+
+.settings__pfpPrimaryContainer {
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 20px;
+}
+
+.settings__pfp__container {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+}
+
+.settings__pfp {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.settings__pfp--coverContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-items: center;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.4);
+	font-size: 40px;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 200ms linear;
+}
+
+.settings__pfp--coverContainer:hover {
+	opacity: 1;
+}
+
+.settings__editProfile {
+	padding: 30px 0;
+}
+
+.settings__editProfile__container {
+	display: flex;
+	flex-direction: column;
+}
+
+.settings__editProfile__container > label {
+	font-size: 18px;
+	margin: 15px 0 5px 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.settings__editProfile__container > input,
+.settings__editProfile__container > textarea,
+.settings__editProfile__container > select {
+	height: 50px;
+	background-color: #3C4043;
+	border-radius: 10px;
+	border: none;
+	font-size: 16px;
+	color: #fff;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+	padding: 0 10px;
+	transition: box-shadow 100ms linear;
+}
+
+.settings__editProfile__container > input:focus,
+.settings__editProfile__container > textarea:focus,
+.settings__editProfile__container > select:focus,
+.settings__saveChangesBtn:focus {
+	box-shadow: 0 0 0 1px #5D9E80, 0 1px 1px 0 rgb(0 0 0 / 7%), 0 0 0 4px #5D9E80;
+}
+
+.settings__editProfile__container > textarea {
+	height: 200px;
+	padding: 10px;
+}
+
+.settings__editProfile__container > select {
+	cursor: pointer;
+}
+
+.settings__saveChangesBtn {
+	margin: 30px 0;
+	width: 300px;
+	height: 40px;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	border: none;
+	background-color: #198754;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color 200ms linear;
+}
+
+.settings__saveChangesBtn:hover {
+	background-color: #157347;
+}
+
+@media (max-width: 760px) {
+	.settings__pfpPrimaryContainer {
+		width: 100%;
+	}
+
+	.settings__saveChangesBtn {
+		display: block;
+		margin: 30px auto;
+	}
+}

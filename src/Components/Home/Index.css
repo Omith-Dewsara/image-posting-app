@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.home {
+	min-height: calc(100vh - 60px);
+	width: 100%;
+	background-color: #28282E;
+	padding: 20px 20px 60px 20px;
+	color: #FFFFFF;
+}
+
+.home__errMsg,
+.home__successMsg {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background-color: #CF000F;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.home__errMsg__title,
+.home__successMsg__title {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.home__errMsg__closeIcon,
+.home__successMsg__closeIcon {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.home__successMsg {
+	background-color: #009944;
+}
+
+.home__msgMeModel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+
+.home__msgMeModel__msgContainer {
+	background-color: #bdc3c7;
+	padding: 20px;
+	width: 50%;
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+	color: #000;
+}
+
+.home__msgMeModel__msgHeader {
+	display: flex;
+	align-items: center;
+}
+
+.home__msgMeModel__msgHeader > h2 {
+	margin: 0 0 0 10px;
+	font-weight: 600;
+}
+
+.home__msgMeModel__msgBody {
+	margin: 10px 0 0 0;
+}
+
+.home__msgMeModel__msgBody > textarea {
+	width: 100%;
+	height: 150px;
+	font-family: 'Poppins', sans-serif;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.home__msgMeModel__msgBody > button {
+	display: block;
+	margin: 5px auto 0 auto;
+	width: 200px;
+	height: 35px;
+	font-size: 16px;
+	border-radius: 20px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background-color: #704DDC;
+	color: #fff;
+}
+
+.home__msgMeModel__msgHeader__pfp {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.home__main {
+	display: flex;
+}
+
+.home__header__pfpContainer {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.home__header__pfp {
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+}
+
+.home__header__addPfp {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	font-size: 40px;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 200ms linear;
+}
+
+.home__header__addPfp:hover {
+	opacity: 1;
+}
+
+.home__header {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	align-items: center;
+}
+
+.home__header__name {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.home__main__left__info {
+	padding: 20px 0;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.home__main__left__info--loading,
+.home__header__name--loading {
+	background-color: #3C4043;
+	width: 400px;
+	height: 30px;
+	margin: 0 0 10px 0;
+	border-radius: 8px;
+}
+
+.home__header__name--loading {
+	width: 100px;
+	margin: 10px 0 0 0;
+}
+
+.home__main__buttons {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0 0 0;
+}
+
+.home__main__buttons > button {
+	height: 40px;
+	cursor: pointer;
+	font-size: 16px;
+	width: 250px;
+	height: 40px;
+	font-size: 16px;
+	background: transparent;
+	cursor: pointer;
+	border-radius: 5px;
+	text-transform: uppercase;
+  	letter-spacing: 1.2px;
+  	transition: background-color 150ms linear;
+  	font-weight: 600;
+}
+
+.home__main__buttons__imgGllryBtn {
+  border: 2px solid #38ef7d;
+  color: #38ef7d;
+  box-shadow: 0 0 10px #44A08D;
+}
+
+.home__main__buttons__imgGllryBtn:hover {
+	background-color: #1D976C;
+	color: #000;
+}
+
+.home__main__buttons__msgMeBtn {
+	margin: 20px 0 0 0;
+	border-radius: 5px;
+	border: 2px solid #704DDC;
+	color: #704DDC;
+	box-shadow: 0 0 10px #704DDC;
+}
+
+.home__main__buttons__msgMeBtn:hover {
+	color: #000;
+	background-color: #704DDC;
+}
+
+.home__main__right {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+	height: calc(100vh - 80px);
+}
+
+.home__main__right__img {
+	width: 500px;
+}
+
+@media (max-width: 760px) {
+	.home__main {
+		flex-direction: column;
+	}
+
+	.home__header {
+		width: 100%;
+	}
+
+	.home__msgMeModel__msgContainer {
+		width: 90%;
+	}
+
+	.home__main__left__info--loading {
+		width: 290px;
+	}
+
+	.home__main__buttons {
+		align-items: center;
+	}
+
+	.home__main__right {
+		display: none;
+	}
+}

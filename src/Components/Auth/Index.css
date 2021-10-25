@@ -1,0 +1,212 @@
+.auth {
+	min-height: 100vh;
+	width: 100%;
+	color: #fff;
+}
+
+.auth__errModel {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	background-color: #CF000F;
+	border-radius: 5px;
+}
+
+.auth__errModel__errMsg {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.auth__errModel__closeIcon {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.auth__signup,
+.auth__signin {
+	display: flex;
+	min-height: 100vh;
+}
+
+.auth__signup__left {
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	position: relative;
+	background-image: url(https://images.pexels.com/photos/3230516/pexels-photo-3230516.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) !important;
+}
+
+.auth__signup__left__coverscreen,
+.auth__signin__left__coverscreen {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 0;
+}
+
+.auth__signup__left__title,
+.auth__signin__left__title {
+	font-size: 50px;
+	z-index: 1;
+}
+
+.auth__signup__left__message,
+.auth__signin__left__message {
+	font-size: 18px;
+	margin: 10px 0;
+	z-index: 1;
+}
+
+.auth__signup__left__button,
+.auth__signin__left__button {
+	width: 300px;
+	height: 40px;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	border: none;
+	background-color: #198754;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: background-color 200ms linear;
+	z-index: 1;
+}
+
+.auth__signup__left__button:hover,
+.auth__signin__left__button:hover {
+	background-color: #157347;
+}
+
+.auth__signup__right,
+.auth__signin__right {
+	padding: 20px;
+	width: 70%;
+}
+
+.auth__signup__right__title {
+	text-align: center;
+}
+
+.auth__signup__right__registrationContainer {
+	display: flex;
+	flex-direction: column;
+	padding: 50px 0;
+}
+
+.auth__signup__right__registrationContainer > input {
+	height: 50px;
+	margin: 0 0 20px 0;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	padding: 0 10px;
+	border-radius: 5px;
+	background-color: #40454B;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	border: 2px solid transparent;
+}
+
+.auth__signup__right__registrationContainer__errInput {
+	border: 2px solid #F44336 !important;
+}
+
+.auth__signup__right__registrationContainer__btn {
+	width: fit-content;
+	display: block;
+	margin: 10px auto 0 auto;
+	width: 300px;
+	height: 40px;
+	border-radius: 8px;
+	font-size: 18px;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: #0F9D58;
+	color: #fff;
+}
+
+.signup__right__options__textContainer {
+	display: flex;
+	align-items: center;
+}
+
+.signup__right__options__textLine {
+	flex: 1;
+	height: 1px;
+	background-color: lightgrey;
+}
+
+.signup__right__options__text {
+	margin: 0 10px;
+}
+
+.signup__right__option > img {
+	width: 30px;
+	height: 30px;
+	object-fit: contain;
+}
+
+.signup__right__options {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+.signup__right__options > div {
+	cursor: pointer;
+	width: 70px;
+	height: 70px;
+	margin: 0 20px 0 0;
+	border-radius: 50%;
+	background-color: #40454B;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: transform 200ms linear;
+}
+
+.signup__right__options > div:hover {
+	transform: scale(1.1);
+}
+
+.signup__right__mobileSignInMsgContainer {
+	display: none;
+	margin: 10px 0 0 0;
+	font-size: 18px;
+}
+
+.signup__right__mobileSignInMsgContainer > span {
+	cursor: pointer;
+	text-decoration: underline;
+	color: #11B45F;
+}
+
+@media (max-width: 760px) {
+	.signup__right__mobileSignInMsgContainer {
+		display: block;
+	}
+
+	.auth__signup__left {
+		display: none;
+	}
+
+	.auth__signup__right {
+		width: 100%;
+	}
+}

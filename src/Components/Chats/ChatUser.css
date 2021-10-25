@@ -1,0 +1,27 @@
+.chatUser {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid grey;
+	cursor: pointer;
+	height: 60px;
+	backdrop-filter: blur(10px);
+	transition: background-color 200ms linear;
+}
+
+.chatUser:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.chatUser__left > img {
+	width: 60px;
+	height: 100%;
+}
+
+.chatUser__left__emptyImg {
+	background-color: #31AF91;
+}
+
+.chatUser__right {
+	margin: 0 0 0 10px;
+	font-size: 18px;
+}

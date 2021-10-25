@@ -1,0 +1,31 @@
+.navbar {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #232228;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 0 20px #1F9587;
+}
+
+.navbar > * {
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 200ms linear;
+}
+
+.navbar > *:hover {
+	backdrop-filter: blur(10px);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+}

@@ -1,0 +1,87 @@
+.friendReq {
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(10px);
+	padding: 0 10px 0 0;
+	color: #000;
+	margin: 0 0 15px 0;
+} 
+
+.friendReq__header > img {
+	width: 60px;
+	height: 60px;
+}
+
+.friendReq__body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+	margin: 0 0 0 10px;
+} 
+
+.friendReq__body__left {
+	height: 100%;
+}
+
+.friendReq__body__userNamme {
+	font-weight: 800;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.friendReq__body__right {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.friendReq__body__right > div {
+	font-size: 22px;
+	/*background-color: red;*/
+	height: 42px;
+	width: 42px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+.friendReq__body__message {
+	width: 99%;
+	height: 20px;
+	overflow: hidden;
+}
+
+.friendReq__body__message::-webkit-scrollbar {
+	display: none;
+}
+
+.friendReq__body__right__addFriendReq {
+	margin: 0 10px 0 0;
+	background-color: #198754;
+	transition: transform 200ms linear, background-color 200ms linear;
+}
+
+.friendReq__body__right__removeFriendReq {
+	background-color: #dc3545;
+	transition: transform 200ms linear, background-color 200ms linear;
+}
+
+.friendReq__body__right__addFriendReq:hover,
+.friendReq__body__right__removeFriendReq:hover {
+	transform: scale(1.1);
+}
+
+.friendReq__body__right__addFriendReq:hover {
+	background-color: #157347;
+}
+
+.friendReq__body__right__removeFriendReq:hover {
+	background-color: #BB2D3B;
+}
+
+@media (max-width: 760px) {
+
+}
